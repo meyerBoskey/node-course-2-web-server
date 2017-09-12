@@ -35,6 +35,38 @@ hbs.registerHelper('screamIt', (text) => {
 });
 
 app.get('/', (req, res) => {
+<<<<<<< HEAD
+  res.render('mind.hbs', {
+    pageTitle: 'Mind Reader App',
+=======
+  // res.send('<h1>Hello Express!</h1>');
+  res.render('home.hbs', {
+    pageTitle: 'Home Page',
+    welcomeMessage: 'Welcome to my super awesome website!',
+    name: 'Cullen',
+    likes: [
+      'lifting',
+      'sports'
+    ]
+  });
+});
+
+app.get('/about', (req, res) => {
+  res.render('about.hbs', {
+    pageTitle: 'About Page',
+  });
+});
+
+
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Projects Page',
+    pageText: 'Portfolio page here'
+>>>>>>> f6aabac68bdaf43cfd9683bdde75cffd110e8fef
+  });
+});
+
+app.get('/mind', (req, res) => {
   res.render('mind.hbs', {
     pageTitle: 'Mind Reader App',
   });

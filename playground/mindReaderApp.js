@@ -10,10 +10,19 @@ var rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
+<<<<<<< HEAD
   console.log('1. Think of a two digit integer.')
   console.log('2. Add the two digits of your number together.')
   console.log('3. Subtract this some from your original number')
   console.log('4. locate your number below and concentrate on the picture...')
+=======
+var instructions = {
+  console.log('1. Think of a two digit integer.');
+  console.log('2. Add the two digits of your number together.');
+  console.log('3. Subtract this some from your original number');
+  console.log('4. locate your number below and concentrate on the picture...');
+};
+>>>>>>> f6aabac68bdaf43cfd9683bdde75cffd110e8fef
 
 
 rl.question('Please tell me your name: ', function (name) {
